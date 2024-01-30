@@ -3,6 +3,7 @@ const { getUsers } = require('./db');
 
 const app = express();
 
+
 app.get('/users', (req, res) => {
   getUsers((err, results) => {
     if (err) {
